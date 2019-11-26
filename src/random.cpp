@@ -110,6 +110,7 @@ static void ReportHardwareRand()
  *
  * Must only be called when RdRand is supported.
  */
+ 
 static uint64_t GetRdRand() noexcept
 {
     // RdRand may very rarely fail. Invoke it up to 10 times in a loop to reduce this risk.
